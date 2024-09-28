@@ -1,0 +1,153 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1&f[]=array@400&display=swap');
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    font-family: "Satoshi", sans-serif;
+}
+
+.background_gradient {
+    height: 100vh;
+    background-image: url('assets/gradient_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.header-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin-top: 25px;
+    position: fixed;
+    transition: height .5s;
+    width: 100%;
+    z-index: 99999;
+}
+
+.header {
+    background-color: #111111d7;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(8px);
+    height: 77px;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 0 22px;
+    position: relative;
+    transition: height .3s;
+    width: 78rem;
+}
+
+.header, .left-header {
+    align-items: center;
+    display: flex;
+}
+
+.left-header {
+    gap: 35px;
+    left: 25px;
+    position: absolute;
+    top: 20px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo h1 {
+    color: #fafafa;
+    font-size: 28px;
+    font-weight: 550;
+    margin: 0;
+}
+
+.logo h1 span {
+    color: #358fe5;
+}
+
+.logo img {
+    height: 36px;
+    margin-right: 12px;
+    margin-top: 2px;
+    object-fit: contain;
+    width: 36px;
+}
+
+.nav {
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: #fafafa;
+    font-size: 17.5px;
+    font-weight: 400;
+    height: 40px;
+    padding: 0 18px;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.nav a:last-child {
+    background-color: #3590e56d;
+    border: 2px solid #3590e56d;
+    border-radius: 9999px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.nav a:hover {
+    background-color: #202020;
+}
+
+.nav a:hover:last-child {
+    background-color: #3590e56d;
+    box-shadow: 0 2px 16px #3590e56d;
+}
+
+.mobile-menu-button {
+    display: none;
+    margin-right: 10px;
+}
+
+.mobile-menu-button svg {
+    color: #358fe5;
+    font-size: 43px;
+}
+
+@media (max-width: 800px) {
+    .nav a {
+        padding: 0 13px;
+    }
+}
+
+@media (max-width: 710px) {
+    .nav a {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 665px) {
+    .nav {
+        display: none;
+    }
+}
