@@ -7,3 +7,7 @@ my social :
     https://youtube.com/@mevona
     https://x.com/occhiprofondi00
     https://t.me/mevona
+
+donate:
+    eth wallet: 0x4b5Dc825BD59Ccc75A264B87DC2985C6EFc92b78
+    paypal: @mevona
